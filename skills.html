@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHLEY</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-message">
+      <a href="#" class="logo"
+        ><span><i class="bx bx-star"></i> A S H</span> L E Y</a
+      >
+      <!-- Navigation menu linking to various sections of the homepage -->
+      <header class="header">
+        <a href="#" class="logo">
+          <span><i class="bx bx-star"></i> A S H</span> L E Y
+        </a>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact-me">Contact Me</a></li>
+          </ul>
+          <!-- Hamburger toggle -->
+          <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>    
+      <body>
+        <script>
+          // JavaScript for Toggle Hamburger Menu
+  const navbarToggle = document.getElementById('navbar-toggle');
+  const navbarLinks = document.querySelector('.navbar-links');
+  const messageButton = document.getElementById('message-button');
+  
+  navbarToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    messageButton.classList.toggle('active');
+  });
+        </script>
+    </header>
+    <main>
+      <section id="skills" class="skills-bt">
+        <h2>My Skills</h2>
+        <p>
+          "Learn more about the skills I have acquired over time and my
+          proficiency in each."
+        </p>
+
+        <div class="skills-container">
+          <div class="skill-bt">
+            <div class="description">
+              <p>Expert in image editing and graphic design.</p>
+            </div>
+            <h3>Photoshop</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+            <p class="percentage">90%</p>
+          </div>
+
+          <div class="skill-bt">
+            <div class="description">
+              <p>Experienced in JavaScript libraries for web interactions.</p>
+            </div>
+            <h3>jQuery</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 75%"></div>
+            </div>
+            <p class="percentage">75%</p>
+          </div>
+
+          <div class="skill-bt">
+            <div class="description">
+              <p>Proficient in creating structured, semantic web pages.</p>
+            </div>
+            <h3>HTML</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 82%"></div>
+            </div>
+            <p class="percentage">82%</p>
+          </div>
+
+          <div class="skill-bt">
+            <div class="description">
+              <p>Skilled in styling and creating responsive designs.</p>
+            </div>
+            <h3>CSS</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+            <p class="percentage">80%</p>
+          </div>
+
+          <div class="skill-bt">
+            <div class="description">
+              <p>Familiar with theme development and customization.</p>
+            </div>
+            <h3>WordPress</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+            <p class="percentage">60%</p>
+          </div>
+
+          <div class="skill-bt">
+            <div class="description">
+              <p>
+                Experienced in server-side scripting and web application
+                development.
+              </p>
+            </div>
+            <h3>PHP</h3>
+            <div class="progress-bar">
+              <div class="progress" style="width: 65%"></div>
+            </div>
+            <p class="percentage">65%</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

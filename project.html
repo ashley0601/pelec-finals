@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHLEY</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header-message">
+      <a href="#" class="logo"
+        ><span><i class="bx bx-star"></i> A S H</span> L E Y</a
+      >
+      <!-- Navigation menu linking to various sections of the homepage -->
+      <header class="header">
+        <a href="#" class="logo">
+          <span><i class="bx bx-star"></i> A S H</span> L E Y
+        </a>
+        <nav class="navbar">
+          <ul class="navbar-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#contact-me">Contact Me</a></li>
+          </ul>
+          <!-- Hamburger toggle -->
+          <div class="navbar-toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>    
+      <body>
+        <script>
+          // JavaScript for Toggle Hamburger Menu
+  const navbarToggle = document.getElementById('navbar-toggle');
+  const navbarLinks = document.querySelector('.navbar-links');
+  const messageButton = document.getElementById('message-button');
+  
+  navbarToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+    messageButton.classList.toggle('active');
+  });
+        </script>
+      <!-- A message button leading to the current message page -->
+      <a href="message.html" class="message">Message</a>
+    </header>
+    <section id="project" class="project">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-cards">
+        <!-- Calculator Project Card -->
+        <div class="project-card">
+          <h3 class="project-title">Calculator App</h3>
+          <p class="project-description">
+            A simple calculator built using Python and Tkinter. It performs
+            basic arithmetic operations.
+          </p>
+          <a
+            href="https://github.com/ashley0601/Calculator.git"
+            class="project-link"
+            >View Code</a
+          >
+        </div>
+
+        <!-- School Portal Project Card -->
+        <div class="project-card">
+          <h3 class="project-title">Student Portal</h3>
+          <p class="project-description">
+            A student portal built with Python and Tkinter, allowing students to
+            view grades and attendance.
+          </p>
+          <a
+            href="https://github.com/ashley0601/Student-Portal.git"
+            class="project-link"
+            >View Code</a
+          >
+        </div>
+
+        <!-- Enrollment Form Project Card -->
+        <div class="project-card">
+          <a href="#"><box-icon name="notepad"></box-icon></a>
+          <h3 class="project-title">Enrollment Form</h3>
+          <p class="project-description">
+            A user-friendly enrollment form designed using HTML and CSS for
+            student registration.
+          </p>
+          <a
+            href="https://github.com/kurtprime/AshleyEnallo"
+            class="project-link"
+            >View Code</a
+          >
+        </div>
+      </div>
+
+      <!-- Optional Figma Design -->
+      <div class="figma-link">
+        <h3>Design Reference</h3>
+        <a
+          href="https://www.figma.com/design/CfWaUezjxuq8R2CD45ra8p/Untitled?node-id=0-1&node-type=canvas&t=z5mvR4FVBYzcyBGc-0"
+          target="_blank"
+          class="figma-button"
+          >View Figma Design</a
+        >
+      </div>
+    </section>
+  </body>
+</html>

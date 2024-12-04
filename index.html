@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASHLEY</title>
+    <!-- Boxicons library for icons usage -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Link to the external CSS stylesheet for styling the webpage -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header section containing the logo and navigation links -->
+    <header class="header">
+      <a href="#" class="logo">
+        <span><i class="bx bx-star"></i> A S H</span> L E Y
+      </a>
+      <nav class="navbar">
+        <ul class="navbar-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#contact-me">Contact Me</a></li>
+          <a href="message.html" class="message">Message</a>
+        </ul>
+       
+        <!-- Hamburger toggle -->
+        <div class="navbar-toggle" id="navbar-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>    
+    <body>
+      <script>
+        // JavaScript for Toggle Hamburger Menu
+      const navbarToggle = document.getElementById('navbar-toggle');
+      const navbarLinks = document.querySelector('.navbar-links');
+      navbarToggle.addEventListener('click', () => {
+        navbarLinks.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      navbarLinks.addEventListener("click", (event) => {
+          if (event.target.tagName === "A") {
+            navbarLinks.classList.remove("active");
+          }
+        });
+      </script>
+    <!-- Main content section for the home page -->
+    <main>
+      <div class="Catimg"></div>
+      <section class="home">
+        <div class="home-content">
+          <h3>Hi!</h3>
+          <h1>I'm <span>Ashley Enallo</span><br />a Web Developer</h1>
+          <p>
+            I am passionate about information technology, with a strong
+            foundation in both front-end and back-end development. As a web
+            developer, I leverage technologies like HTML, CSS, JavaScript,
+            React, Node.js, and databases to create responsive, scalable, and
+            user-friendly websites and applications.
+          </p>
+          <div class="btn-box">
+            <a href="project.html" class="btn-1">Projects</a>
+            <a href="#footer" class="btn-2">More</a>
+          </div>
+        </div>
+        <div class="imgbox">
+          <img src="ash.jpg" alt="Ashley Enallo's profile picture" />
+        </div>
+      </section>
+    </main>
+    <!-- Main content section for the about page -->
+    <main>
+      <div class="Meowimg"></div>
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="ashie.jpg" alt="" />
+        </div>
+        <div class="about-content">
+          <h2 class="heading">About<span> Me</span></h2>
+          <h3>Web <span> Developer</span></h3>
+          <p>
+            "I am an IT student at Dalubhasaan ng Lungsod ng Lucena, passionate
+            about web development and technology. I have honed my skills in
+            creating dynamic, user-friendly websites and applications,
+            leveraging technologies like HTML, CSS, JavaScript, React, Node.js,
+            and databases such as SQL and MongoDB. I am constantly expanding my
+            knowledge to stay up-to-date with the latest industry trends, with a
+            goal of delivering efficient, secure, and scalable solutions."
+          </p>
+          <a href="skills.html" class="skills-btn">Skills</a>
+          <!-- Navigation or Skills Button -->
+        </div>
+      </section>
+    </main>
+    <!-- Main content section for the skills page -->
+    <main>
+      <div class="pinkimg"></div>
+      <section class="skills" id="skills">
+        <h2>My Skills</h2>
+        <p>
+          I specialize in developing modern, responsive, and user-friendly
+          websites and applications using the following technologies:
+        </p>
+        <div class="skills-list">
+          <div class="skill-item">
+            <i class="bx bxl-html5"></i>
+            <h3>HTML</h3>
+            <p>
+              Proficient in HTML5 to create semantic, structured, and accessible
+              web content.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-css3"></i>
+            <h3>CSS</h3>
+            <p>
+              Expert in CSS3 for styling web pages, with a strong focus on
+              responsiveness and design.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-javascript"></i>
+            <h3>JavaScript</h3>
+            <p>
+              Experienced in JavaScript to make web pages dynamic and
+              interactive.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-react"></i>
+            <h3>React</h3>
+            <p>
+              Skilled in React for building fast and scalable single-page
+              applications (SPAs).
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-nodejs"></i>
+            <h3>Node.js</h3>
+            <p>
+              Proficient in Node.js for server-side development, building APIs,
+              and handling server-side logic.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-python"></i>
+            <h3>Python</h3>
+            <p>
+              Experienced in Python for backend development, scripting, and
+              automation tasks.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-mongodb"></i>
+            <h3>MongoDB</h3>
+            <p>
+              Skilled in using MongoDB for NoSQL database solutions, optimizing
+              performance for scalability.
+            </p>
+          </div>
+          <div class="skill-item">
+            <i class="bx bxl-sql"></i>
+            <h3>SQL</h3>
+            <p>
+              Proficient in SQL and relational database management systems like
+              MySQL and PostgreSQL.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Main content section for the contact page -->
+    <main>
+      <section class="contact-me" id="contact-me">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the following channels:</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="bx bx-envelope"></i>
+            <a href="mailto:enalloashie@gmail.com">enalloashie@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="bx bx-phone"></i>
+            <a href="tel:+63 962 428 5673">+63 962 428 5673</a>
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/profile.php?id=100081268191332"
+              target="_blank"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/enallo-maria-ashley-joy-o-676b1133b/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="https://x.com/enallo_ashley" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/ashfall_18/" target="_blank"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer section with links to other pages and copyright information -->
+    <footer id="footer" class="footer">
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Privacy</a>
+        </li>
+        <li>
+          <a href="#">Security</a>
+        </li>
+        <li>
+          <a href="#">Manage Cookies</a>
+        </li>
+      </ul>
+      <p class="copyright">© 2024 ASHLEY | All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
